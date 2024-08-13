@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>股票收益截图生成器</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<script src="/stock/stockEarning.js"></script>
+
+<body>
+    <div class="container">
+        <div class="input-section">
+            <h2>输入信息</h2>
+            <input type="text" id="username" placeholder="用户名">
+            <input type="text" id="date" placeholder="日期 (YYYY-MM-DD HH:MM:SS)">
+            <input type="number" id="amount" placeholder="累计盈佣">
+            <input type="text" id="stockName" placeholder="股票名称">
+            <input type="number" id="percentage" placeholder="涨跌幅 (%)">
+            <input type="number" id="currentPrice" placeholder="现价">
+            <input type="number" id="costPrice" placeholder="成本">
+            <input type="file" id="backgroundImage" accept="image/*">
+            <button id="generateButton">生成图片</button>
+        </div>
+        <div class="preview-section">
+            <h2>预览</h2>
+            <canvas id="previewCanvas" width="600" height="400"></canvas>
+            <a id="downloadLink" download="stock_image.png">下载图片</a>
+        </div>
+    </div>
+    
+</body>
+
+</html>
